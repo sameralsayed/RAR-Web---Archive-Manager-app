@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="RAR Web - Free online archiver &amp; file manager. Create RAR &amp; ZIP archives, extract RAR, ZIP, 7z, TAR and more. Password protection, repair archives, fast compression. Sleek browser-based RARLAB experience.">
+    <meta name="keywords" content="rar web, zip extractor online, create rar archive, extract rar zip 7z, file archiver web, password protect archive, rarlab web, online compression tool, web file manager, repair archive">
+    <meta name="author" content="SAMER SAEID">
+    <meta name="robots" content="index, follow">
+    <title>RAR Web • Archive &amp; Extract Files • RAR | ZIP | 7z</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3 d-flex align-items-center" href="#">
+                <i class="fas fa-file-archive text-warning me-2"></i> RAR Web
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#how">How It Works</a></li>
+                    <li class="nav-item"><a class="nav-link btn btn-warning text-dark px-4 ms-3 fw-semibold" href="#demo">Launch Archiver</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="home" class="hero py-5 text-white text-center" style="background: linear-gradient(135deg, #212529, #343a40); min-height: 100vh; display: flex; align-items: center;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-9">
+                    <h1 class="display-3 fw-bold mb-3">RAR Web</h1>
+                    <p class="lead mb-4 fs-4">The powerful archiver, extractor &amp; file manager — now in your browser.<br>Create RAR &amp; ZIP • Extract 20+ formats • Password protected • Lightning fast.</p>
+                    <button onclick="launchDemo()" class="btn btn-warning btn-lg px-5 py-3 shadow-lg fs-5 fw-semibold">
+                        <i class="fas fa-bolt me-2"></i> START ARCHIVING NOW
+                    </button>
+                    <div class="mt-4 d-flex justify-content-center gap-3 flex-wrap">
+                        <span class="badge bg-success fs-6 px-3 py-2"><i class="fas fa-lock me-1"></i> AES-256 Encryption</span>
+                        <span class="badge bg-success fs-6 px-3 py-2"><i class="fas fa-file-archive me-1"></i> RAR5 • ZIP • 7z • TAR</span>
+                        <span class="badge bg-success fs-6 px-3 py-2"><i class="fas fa-shield-alt me-1"></i> 100% Private • Local Only</span>
+                    </div>
+                    <div class="mt-5">
+                        <img src="https://picsum.photos/id/1015/900/480" alt="RAR Web Interface - File Archiver" class="img-fluid rounded-4 shadow-2xl" style="max-height: 420px; border: 12px solid #212529;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section id="features" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold">Everything You Need in One Tool</h2>
+                <p class="lead text-muted">Just like the original RAR app — fully functional in your browser</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm text-center p-4">
+                        <i class="fas fa-file-archive fa-3x text-warning mb-3"></i>
+                        <h4>Create RAR &amp; ZIP</h4>
+                        <p class="text-muted">Build solid archives with multi-core compression and custom levels.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm text-center p-4">
+                        <i class="fas fa-unlock-alt fa-3x text-warning mb-3"></i>
+                        <h4>Extract Everything</h4>
+                        <p class="text-muted">RAR, ZIP, 7z, TAR, GZ, BZ2, XZ, ISO, ARJ &amp; more.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm text-center p-4">
+                        <i class="fas fa-key fa-3x text-warning mb-3"></i>
+                        <h4>Password Protection</h4>
+                        <p class="text-muted">AES-256 encryption for secure archives.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm text-center p-4">
+                        <i class="fas fa-tools fa-3x text-warning mb-3"></i>
+                        <h4>Repair Archives</h4>
+                        <p class="text-muted">Fix damaged RAR &amp; ZIP files instantly.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm text-center p-4">
+                        <i class="fas fa-folder-tree fa-3x text-warning mb-3"></i>
+                        <h4>File Manager</h4>
+                        <p class="text-muted">Copy, move, delete, rename &amp; create folders.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm text-center p-4">
+                        <i class="fas fa-tachometer-alt fa-3x text-warning mb-3"></i>
+                        <h4>Benchmark &amp; Recovery</h4>
+                        <p class="text-muted">Test speed and add recovery records.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section id="how" class="py-5">
+        <div class="container">
+            <h2 class="text-center display-5 fw-bold mb-5">How RAR Web Works</h2>
+            <div class="row text-center">
+                <div class="col-md-4 mb-4">
+                    <div class="step-circle mx-auto mb-3">1</div>
+                    <h5>Browse Files</h5>
+                    <p class="text-muted">Upload or drag files from your device — everything stays local.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="step-circle mx-auto mb-3">2</div>
+                    <h5>Compress or Extract</h5>
+                    <p class="text-muted">Choose RAR/ZIP or unpack any supported format.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="step-circle mx-auto mb-3">3</div>
+                    <h5>Download Result</h5>
+                    <p class="text-muted">Get your archive or extracted files instantly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LIVE DEMO -->
+    <section id="demo" class="py-5 bg-dark text-white">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-11">
+                    <h2 class="text-center mb-4">Live RAR Archiver Demo</h2>
+                    <p class="text-center lead mb-5">Simulates the full RARLAB experience — create, extract, manage</p>
+
+                    <ul class="nav nav-tabs mb-4 justify-content-center" id="demoTabs">
+                        <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#browserTab"><i class="fas fa-folder-open me-1"></i> File Browser</a></li>
+                        <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#createTab"><i class="fas fa-compress-arrows-alt me-1"></i> Create Archive</a></li>
+                        <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#extractTab"><i class="fas fa-expand-arrows-alt me-1"></i> Extract Archive</a></li>
+                    </ul>
+
+                    <div class="tab-content">
+                        <!-- File Browser Tab -->
+                        <div class="tab-pane fade show active" id="browserTab">
+                            <div class="card bg-white text-dark p-4">
+                                <h5 class="mb-3"><i class="fas fa-hdd me-2"></i> Device Storage</h5>
+                                <div class="table-responsive">
+                                    <table class="table table-hover" id="fileTable">
+                                        <thead><tr><th><input type="checkbox" id="selectAll"></th><th>Name</th><th>Size</th><th>Type</th><th>Actions</th></tr></thead>
+                                        <tbody id="fileList"></tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Create Archive Tab -->
+                        <div class="tab-pane fade" id="createTab">
+                            <div class="card bg-white text-dark p-4">
+                                <h5 class="mb-3">Create New Archive</h5>
+                                <div class="mb-3">
+                                    <label class="form-label">Archive Name</label>
+                                    <input type="text" id="archiveName" class="form-control" value="my_archive.rar">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Compression Format</label>
+                                    <select id="formatSelect" class="form-select">
+                                        <option value="rar">RAR (best compression)</option>
+                                        <option value="zip">ZIP</option>
+                                    </select>
+                                </div>
+                                <button onclick="createArchiveDemo()" class="btn btn-warning w-100 py-3">
+                                    <i class="fas fa-file-archive me-2"></i> COMPRESS SELECTED FILES
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Extract Tab -->
+                        <div class="tab-pane fade" id="extractTab">
+                            <div class="card bg-white text-dark p-4">
+                                <h5 class="mb-3">Extract Archive</h5>
+                                <div id="extractDemoArea">
+                                    <div class="alert alert-info">Drop or select a sample archive below</div>
+                                    <div class="d-flex gap-2 flex-wrap" id="sampleArchives"></div>
+                                </div>
+                                <button onclick="extractDemo()" class="btn btn-success w-100 py-3 mt-4" id="extractBtn" style="display:none;">
+                                    <i class="fas fa-unlock me-2"></i> EXTRACT NOW
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Progress -->
+                    <div id="progressDemo" class="d-none mt-4">
+                        <div class="card bg-white text-dark p-4">
+                            <h5 id="operationTitle" class="mb-3"></h5>
+                            <div class="progress" style="height: 28px;">
+                                <div id="demoProgressBar" class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" style="width: 0%"></div>
+                            </div>
+                            <small id="progressText" class="text-muted mt-2 d-block"></small>
+                        </div>
+                    </div>
+
+                    <!-- Results -->
+                    <div id="resultsDemo" class="d-none mt-4">
+                        <div class="alert alert-success text-center fs-5" id="resultMessage"></div>
+                        <button onclick="resetDemo()" class="btn btn-outline-light w-100">Start Another Operation</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; Copyright SAMER SAEID. All Rights Reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">
+                        Made by ♥️ <a href="https://bio.link/samer" target="_blank" class="text-white text-decoration-underline">SAMER SAEID</a>
+                    </p>
+                </div>
+            </div>
+            <div class="text-center mt-4 small text-muted">
+                SEO Optimized • Fully Responsive • Works on Desktop, Mobile &amp; Tablet
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
